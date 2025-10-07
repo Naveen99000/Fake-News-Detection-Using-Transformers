@@ -16,6 +16,7 @@ from nltk.corpus import stopwords
 
 app = Flask(__name__,template_folder='./templates',static_folder='./static')
 
+# loaded_model = pickle.load(open("model.pkl", 'rb'))
 loaded_model = pickle.load(open("model.pkl", 'rb'))
 vector = pickle.load(open("vector.pkl", 'rb'))
 lemmatizer = WordNetLemmatizer()
